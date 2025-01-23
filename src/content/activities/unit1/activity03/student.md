@@ -62,16 +62,16 @@ class Walker {
 ```
 ---
 ##### Resultados
-![resultado1](/src/assets/unit1/act3_1.png)
+![resultado1](../../../../assets/unit1/act3_1.png)
 > En este resultado podemos ver que la línea desapareció en algunos momentos, sin embargo, era relativamente continua con algunos picos hacia la izquierda.
 
-![resultado2](/src/assets/unit1/act3_2.png)
+![resultado2](../../../../assets/unit1/act3_2.png)
 > Aquí podemos ver que la línea casi desapareció en todo el camino.
 
-![resultado3](/src/assets/unit1/act3_3.png)
+![resultado3](../../../../assets/unit1/act3_3.png)
 > En cambio, con esta se observa como la línea desapareció en la mitad del trayecto y luego empezó a engrosar.
 
-![resultado4](/src/assets/unit1/act3_4.png)
+![resultado4](../../../../assets/unit1/act3_4.png)
 > Para terminar con este resultado donde la línea tuvo un crecimiento más o menos constante, con solo algunas perdidas de tamaño y desapariciones en su trayecto
 
 > [!NOTE]
