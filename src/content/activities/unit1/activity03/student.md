@@ -74,8 +74,8 @@ class Walker {
 ![resultado4](../../../../assets/unit1/act3_4.png)
 > Para terminar con este resultado donde la línea tuvo un crecimiento más o menos constante, con solo algunas perdidas de tamaño y desapariciones en su trayecto
 
-> [!NOTE]
-> Es interesante como a pesar de ser el mismo código ejecutado diferentes veces, la aleatoriedad ocasiona que sean resultados en esencia diferentes, algunos otorgando mucha información del movimiento de la línea y otros simplemente mostrando pequeños fragmentos de su viaje.
+
+Es interesante como a pesar de ser el mismo código ejecutado diferentes veces, la aleatoriedad ocasiona que sean resultados en esencia diferentes, algunos otorgando mucha información del movimiento de la línea y otros simplemente mostrando pequeños fragmentos de su viaje.
 
 ---
 
