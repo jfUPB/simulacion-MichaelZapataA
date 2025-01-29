@@ -1,3 +1,5 @@
+#### Actividad 2
+
 ```js
 // The Nature of Code
 // Daniel Shiffman
@@ -25,7 +27,7 @@ class Walker {
   show() {
     stroke(0);
     this.position.add(this.velocity)
-    point(this.position.x, this.position.y);
+    point(this.position);
     this.velocity.x = 0;
     this.velocity.y = 0;
   }
@@ -47,4 +49,4 @@ class Walker {
 ```
 
 
-Realicé el cambio de 
+Realicé el cambio de las variables de posición por un vector con las coordenadas del punto y un vector de velocidad que es el que afecta el movimiento respecto a la función ```step();```.
