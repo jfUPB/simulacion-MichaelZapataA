@@ -4,7 +4,7 @@ Después de mucha prueba y error, pude llegar al resultado deseado
 
 ##### [Link a P5JS](https://editor.p5js.org/MichaelZapataA/sketches/ggA4nyQF_)
 
-
+![Resultado](../../../../assets/unit2/act11_resultado.gif)
 
 
 ##### Código
