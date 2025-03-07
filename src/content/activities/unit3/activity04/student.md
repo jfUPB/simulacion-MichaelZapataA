@@ -2,9 +2,9 @@
 
 Por lo general en la unidad anterior definía la aceleración en el setup y de ser necesario a lo largo del código lo modificaba con algún algoritmo no muy complejo
 
-![img1](../../../../assets/unit4/act4_1.png)
+![img1](../../../../assets/unit3/act4_1.png)
 
-![img1](../../../../assets/unit4/act4_2.png)
+![img2](../../../../assets/unit3/act4_2.png)
 
 ---
 
