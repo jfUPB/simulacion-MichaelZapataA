@@ -112,7 +112,7 @@ function draw() {
 }
 ```
 
-![resultado]((../../../../assets/unit4/act3.gif)
+![resultado](../../../../assets/unit4/act3.gif)
 
 <iframe src="https://editor.p5js.org/MichaelZapataA/full/kc1OnVpfK"></iframe>
 
