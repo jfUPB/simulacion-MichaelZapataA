@@ -112,8 +112,6 @@ function draw() {
 }
 ```
 
-![resultado](../../../../assets/unit4/act3.gif)
-
 <iframe src="https://editor.p5js.org/MichaelZapataA/full/kc1OnVpfK"></iframe>
 
 [link a p5js](https://editor.p5js.org/MichaelZapataA/sketches/kc1OnVpfK)
