@@ -1,31 +1,65 @@
 #### Actividad 10
 
-Después de ver y pensar que podría hacer con lo que vimos en la unidad, y luego de hacer 1000 walk cycles y ver algunos ejemplos como [este en youtube](https://www.youtube.com/watch?v=XXx0vYGDKiw).
+[Link a p5](https://editor.p5js.org/MichaelZapataA/sketches/vrPZ7SJ7d)
 
-Quiero intentar hacer algo similar a ese y hacer un walk cycle procedural con movimientos sinusoidales.
+```js
+// The Nature of Code
+// Daniel Shiffman
+// http://natureofcode.com
 
-Vamos a ver que sale, en principio debo plantear 2 particulas que se muevan en horizontal para simular ambos pies y una particula con un movimiento rectilineo o quizá una onda un poco menos marcada para generar la cadera.
+// Pendulum
 
-Luego debo aprender como simular un brazo (o pierna en este caso) en IK, para poder generar la rodilla y conectar las particulas de los pies con la de la cadera.
+// A simple pendulum simulation
+// Given a pendulum with an angle theta (0 being the pendulum at rest) and a radius r
+// we can use sine to calculate the angular component of the gravitational force.
 
----
+// Gravity Force = Mass * Gravitational Constant;
+// Pendulum Force = Gravity Force * sine(theta)
+// Angular Acceleration = Pendulum Force / Mass = gravitational acceleration * sine(theta);
 
-##### Actualización
+// Note this is an ideal world scenario with no tension in the
+// pendulum arm, a more realistic formula might be:
+// Angular Acceleration = (g / R) * sine(theta)
 
-Estudié [este código](https://editor.p5js.org/rjgilmour/sketches/2xTLrNAlp) para aprender como funciona el IK.
+// For a more substantial explanation, visit:
+// http://www.myphysicslab.com/pendulum1.html
+let pendulum;
+let pendulum2;
 
----
+function setup() {
+  createCanvas(640, 240);
+  // Make a new Pendulum with an origin position and armlength
+  pendulum = new Pendulum(width / 2, 0, 100);
+  pendulum2 = new Pendulum(pendulum.bob.x, pendulum.bob.y, 100);
+}
 
-##### Actualización 2
+function draw() {
+  background(255);
+  pendulum.update();
+  pendulum2.pivot.set(pendulum.bob);
+  pendulum2.update();
+  
+  
+  pendulum.show();
+  pendulum2.show();
+  
+  
+  pendulum.drag(); // for user interaction
+  pendulum2.drag();
+}
 
-Recibí mucha información y estoy un poco saturado pero vi muchos videos que explicaban
+function mousePressed() {
+  pendulum.clicked(mouseX, mouseY);
+  pendulum2.clicked(mouseX, mouseY);
 
-https://www.youtube.com/watch?v=SJyo4z53iUc
+}
 
-https://www.youtube.com/watch?v=V-Lre03F1Ls
+function mouseReleased() {
+  pendulum.stopDragging();  
+  pendulum2.stopDragging();
 
-https://www.youtube.com/watch?v=IKOGwoJ2HLk&t=309s
+}
 
-Este no tenía mucho que ver pero estaba muy interesante entonces lo vi
+```
 
-https://www.youtube.com/watch?v=GXh0Vxg7AnQ
+![img](../../../../assets/unit4/act10.png)
