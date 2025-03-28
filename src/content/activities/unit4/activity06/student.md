@@ -5,9 +5,7 @@
 Es la medida de velocidad de rotación, se define como el ángulo gitado por una unidad de tiempo.
 Su ecuación es 
 
-\[
-\omega = 2\pi f
-\]
+$\omega = 2\pi f$
 ###### Frecuencia
 
 Es la cantidad de veces que se repite el movimiento en una unidad de tiempo.
@@ -22,11 +20,9 @@ Es la posición de un punto en su ### Fase
 
 La fase es la posición de un punto en su ciclo de oscilación en un instante determinado, medida en radianes o grados. Se expresa como:
 
-\[
-\theta = \omega t + \phi
-\]
+$\theta = \omega t + \phi$
 
-donde \( \theta \) es la fase en un tiempo \( t \), \( \omega \) es la velocidad angular, y \( \phi \) es la fase inicial.
+donde $\theta$ es la fase en un tiempo $t$, $\omega$ es la velocidad angular, y $\phi$ es la fase inicial.
 
 La fase permite describir el estado de una onda o movimiento oscilatorio en relación con otro, determinando si están en fase, en oposición de fase o desfasados.
 
