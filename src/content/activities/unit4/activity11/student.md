@@ -325,6 +325,9 @@ let armature = {
 let waveAmplitude = 40;
 let waveFrequency = -0.05;
 
+let frequencySlider;
+
+
 let angleOffset = 0;
 
 let x = 0;
@@ -341,11 +344,26 @@ function setup() {
   createCanvas(600, 400);
   rectMode(CENTER);
   imageMode(CENTER);
+  
+  // Crear slider de frecuencia
+  frequencySlider = createSlider(-0.2, -0.05, waveFrequency, 0.005);
+  frequencySlider.position(10, height + 10); // Ajusta si tienes margen o canvas más grande
+  frequencySlider.style('width', '200px');
 }
 
 function draw() {
   background(220);
 
+  // Actualizar waveFrequency con el valor del slider
+  waveFrequency = frequencySlider.value();
+  bobSpeed = waveFrequency*2;
+
+  // Mostrar valor actual del slider
+  fill(0);
+  noStroke();
+  textSize(14);
+  text("Wave Frequency: " + waveFrequency.toFixed(3), 10, 50);
+  
   // Suelo
   fill(0, 111, 57);
   rect(0, 612, width * 2, 510);
@@ -453,7 +471,7 @@ function drawNeck(x, y) {
   push();
   translate(x, y);
   
-  angleOffset += 0.097;
+  angleOffset += -waveFrequency + 0.047;
   
   noFill();
   stroke(187, 111, 57);
@@ -471,6 +489,7 @@ function drawNeck(x, y) {
   }
   endShape();
 
+  // Dibujar imagen al final del cuello
   let end = neckPoints[neckPoints.length - 1];
   rotate((sin(angleOffset) * PI / 30) + PI*1.85); 
   image(cabeza, end.x+5, end.y-40, 100, 130);
@@ -480,14 +499,14 @@ function drawNeck(x, y) {
 
 ``` 
 
-Le agregué un overlapping de rotación a la cabeza para que no quedara tan tiesa en la animación
+Le agregué un overlapping de rotación a la cabeza para que no quedara tan tiesa en la animación, y le puse un slider que modifica la velocidad de la wave para el movimiento general.
 
-[Video de la simulación](https://drive.google.com/file/d/1SzvWx3gaGwtFU9idkwC1wgntQGiyH5IG/view?usp=sharing)
+[Video de la simulación](https://drive.google.com/file/d/1xtf2Mrmrew5cHjpz3bGaYpb1560N2aP6/view?usp=sharing)
 
 
 ##### Prueba de ver video embed
 
-<iframe src="https://drive.google.com/file/d/1SzvWx3gaGwtFU9idkwC1wgntQGiyH5IG/preview" 
+<iframe src="https://drive.google.com/file/d/1xtf2Mrmrew5cHjpz3bGaYpb1560N2aP6/view?usp=sharing" 
         width="640" 
         height="480" 
         allow="autoplay">
