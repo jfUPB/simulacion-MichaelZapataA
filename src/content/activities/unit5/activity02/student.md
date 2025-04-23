@@ -41,3 +41,25 @@ En el metodo update de las particulas, añadí la fuerza con un vector direcció
 ![img](../../../../assets/unit5/act2_2.png)
 
 ##### Ejemplo 4.6
+
+Se maneja la gestión de la misma forma que el anterior, se genera un emitter en el setup y cada frame agrega una particula nueva, con la revisión de isDead() se borra en el momento adecuado cada particula, liberando memoria y no dejando saturar con infinitas partículas
+
+Voy a agregarle un attractor que funcione como punto de fuerza de gravedad
+
+[link a p5](https://editor.p5js.org/MichaelZapataA/sketches/3GxKzCGD3)
+
+Creé un nuevo script llamado attractor que genera el punto de gravedad, luego en el sketch afecté las partículas con la fuerza de atracción del objeto, hice que el attractor esté en la posición del mouse.
+
+![img](../../../../assets/unit5/act2_3.png)
+
+##### Ejemplo 4.7
+
+Se vuelve a gestionar de la misma manera, se genera un emitter y en  cada frame se genera una partícula nueva, luego se revisa isDead() y se eliminan los puntos correspondientes.
+
+Voy a agregar una zona de resistencia en la mitad de abajo de la simulación, como si fuera agua o algún líquido espeso.
+
+[link a p5](https://editor.p5js.org/MichaelZapataA/sketches/d3eD58zS0)
+
+Le puse la zona de fricción, amplié la duración de las partículas para visualizar mejor el efecto porque en el principio se desaparecían muy pronto al tocar el "liquido", también ubiqué el repeller en la posición del mouse para poder mover y ver como se afectan las particulas.
+
+![img](../../../../assets/unit5/act2_4.png)
