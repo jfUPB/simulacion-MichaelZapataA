@@ -1,0 +1,5 @@
+#### Actividad 1
+
+Me interesó el documental interactivo de CLOUDS que utiliza sistemas de partículas para representar a los participantes del documental con una forma volumétrica, donde es posible representar a una persona totalmente o parcial en caso de que la persona no desee salir como tal en el documental, puede ser muy util para preservar la privacidad e integridad de las personas.
+
+También me gusta como se ve "state of the union 1/5" de R. Luke DuBois, que según investigué, representa los actos de violencia armada mediante un sistema de particulas, donde DuBois emplea sonidos de disparos cada vez que ocurre un acto de violencia, generando una representación muy llamativa y más humana de los datos. Dice que se busca evitar la deshumanización que puede surgir al convertir los datos de las victimas en meros puntos de una visualización.
